@@ -2,28 +2,23 @@ namespace ISUSpring2025_DGD208;
 
 public class FoodHandler
 {
+    private PlayerController _controller;
 
-    public int EatBread(string name)
+    public FoodHandler(PlayerController controller)
     {
-        Console.WriteLine("Eating bread");
-        return 0;
+        _controller = controller;
+        _controller.OnPlayerEatsFood += (a, b) => Console.WriteLine($"You eat {a*a}, {b}");
+        _controller.OnPlayerEatsFood += PlayerEatsFood;
     }
 
-    public int EatPie(string name)
+    private void PlayerEatsFood(int a, string b)
     {
-        Console.WriteLine("Eating pie");
-        return 1;
+        Console.WriteLine($"You eat {a*a}, {b}");
     }
 
-    public int EatShorts(string name)
+    private void UnnecessaryThirdMethod(int a, string b)
     {
-        Console.WriteLine("Mmm, shorts!");
-        return 2;
+        Console.WriteLine($"You eat {a*a}, {b}");
     }
 }
 
-// Eat return integer legend
-// 0 ate and no longer hungry
-// 1 ate and still hungry
-// 2 poisoned
-// 3 felt cute, might eat later
