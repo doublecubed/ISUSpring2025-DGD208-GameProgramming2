@@ -4,7 +4,10 @@ public class Program
 {
     static void Main(string[] args)
     {
-        PlayerController player = new PlayerController();
-        player.Run();
+        //PlayerController player = new PlayerController();
+        //player.Run();
+        
+        DatabaseOps databaseOp = new DatabaseOps();
+        databaseOp.Run();
     }
 }
