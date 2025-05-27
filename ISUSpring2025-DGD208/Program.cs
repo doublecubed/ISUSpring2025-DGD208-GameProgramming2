@@ -2,12 +2,23 @@
 
 public class Program
 {
-    static void Main(string[] args)
+    static async Task Main(string[] args) 
     {
-        //PlayerController player = new PlayerController();
-        //player.Run();
+        new MessageDisplayer();
         
-        DatabaseOps databaseOp = new DatabaseOps();
-        databaseOp.Run();
+        PlayerController player = new PlayerController();
+        player.Run();
+        
+        //DatabaseOps databaseOp = new DatabaseOps();
+        //databaseOp.Run();
+        
+        //PlayerCommander commander = new PlayerCommander();
+        //commander.Run();
+        
+        //AsyncOps ops = new AsyncOps(0);
+        //await ops.Run();
+        Console.WriteLine("program ends");
+        
+        // THE END
     }
 }

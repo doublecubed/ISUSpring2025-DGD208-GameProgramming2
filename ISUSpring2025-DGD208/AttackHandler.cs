@@ -8,6 +8,8 @@ public class AttackHandler
     {
         _controller = controller;
         _controller.OnPlayerAttacked += Attack;
+        
+        MessageDisplayer.Instance.DisplayMessage("Player attacks");
     }
     
     

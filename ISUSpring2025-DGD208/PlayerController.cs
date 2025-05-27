@@ -41,6 +41,7 @@ public class PlayerController
         _foodHandler = new FoodHandler(this);
         _playerDeath = new PlayerDeath(this);
 
+        MessageDisplayer.Instance.StartingMessage();
     }
     
     public void Run()
@@ -55,7 +56,6 @@ public class PlayerController
     {
         int attackType = 56;
         OnPlayerAttacked?.Invoke(attackType);
-        
         
         // Arguments for the old event that we used
         //AttackEventArgs attackArg = new AttackEventArgs(attackType);

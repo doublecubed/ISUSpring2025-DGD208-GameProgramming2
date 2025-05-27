@@ -12,7 +12,7 @@ public class PlayerDeath
 
     public void Kill()
     {
-        Console.WriteLine("Player is dead. Long live the new player");
+        MessageDisplayer.Instance.DisplayMessage("Player is dead. Long live the new player");
         _controller.OnPlayerDeath -= Kill;
     }
 }

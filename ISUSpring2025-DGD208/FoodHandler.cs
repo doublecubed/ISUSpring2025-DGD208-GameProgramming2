@@ -13,7 +13,7 @@ public class FoodHandler
 
     private void PlayerEatsFood(int a, string b)
     {
-        Console.WriteLine($"You eat {a*a}, {b}");
+        MessageDisplayer.Instance.DisplayMessage($"You eat {a*a}, {b}");
     }
 
     private void UnnecessaryThirdMethod(int a, string b)
