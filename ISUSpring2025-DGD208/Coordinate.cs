@@ -2,6 +2,8 @@ namespace ISUSpring2025_DGD208;
 
 public class Coordinate : ICommand
 {
+    // YOU THINK YOU CAN COORDINATE? MY DOG COORDINATES BETTER THAN YOU!
+    
     public Coordinate()
     {
         X = 0;

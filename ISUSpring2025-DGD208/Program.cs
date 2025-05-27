@@ -9,9 +9,6 @@ public class Program
         PlayerController player = new PlayerController();
         player.Run();
         
-        //DatabaseOps databaseOp = new DatabaseOps();
-        //databaseOp.Run();
-        
         //PlayerCommander commander = new PlayerCommander();
         //commander.Run();
         
@@ -20,5 +17,7 @@ public class Program
         Console.WriteLine("program ends");
         
         // THE END
+        
+        // OR IS IT? BWHAHAHAHAHAHAHAHAH
     }
 }
