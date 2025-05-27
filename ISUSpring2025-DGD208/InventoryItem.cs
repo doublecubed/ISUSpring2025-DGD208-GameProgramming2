@@ -2,6 +2,8 @@ namespace ISUSpring2025_DGD208;
 
 public class InventoryItem : ICommand
 {
+    // YOU THINK YOU ARE AN INVENTORY ITEM? MY DOG IS A BETTER INVENTORY ITEM THAN YOU.
+    
     public InventoryItem()
     {
         Name = "default";
